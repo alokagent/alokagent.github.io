@@ -1,6 +1,18 @@
 <html>
 <head>
+<section>
+<script>
+  function clickMe(){
+var name = document.getElementById("nametext").value;
+document.getElementById("circle").innerHTML="Hello, "+ name + "!";
 
+  function clickMe2(){
+  var name = document.getElementById("number").value;
+document.getElementById("age").innerHTML="Hello, "+ name + "!";
+
+  
+</script>
+</section>
 </head>
 <body style="text-align:center;background-color:palegoldenrod">
 <nav>
@@ -15,11 +27,19 @@
      
           </nav>
           <section>
+          <div id="circle" style="height:100px;width:100px;background-color:white;border-radius:50px;position:absolute;top:155px;left:470px;"></div>
           <img src="https://s7d2.scene7.com/is/image/PetSmart/PB1201_STORY_CARO-Authority-HealthyOutside-DOG-20160818?$PB1201$" style="height:300px;">
           <br>
-         Name: <input type="text" />
-         <input type="button" value="Click Me"
-          </section>
+          <section>
+          
+         Name: <input type="text" id="nametext" value=""/>
+         <input type="button" value="clickMe" onclick="clickMe();"/>
+  
+<section>
+    <div id="age" style="height:100px;width:100px;background-color:white;border-radius:50px;position:absolute;top:155px;left:500px;"></div>
+          Age: <input type="number" id="age" value=""/>
+         <input type="button" value="clickMe2" onclick="clickMe2();"/>
+      </section>
 
 
 
